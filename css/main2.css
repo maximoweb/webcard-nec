@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+
+header{
+	height:270px;
+	width:100%;
+	max-width:428px;
+	min-width:320px;
+	background-image:url(../images/top-banner-whatsapp.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center top;
+	margin:0 auto;
+	padding:0;	
+}
+
+header > a{
+	display:block;
+	width:100%;
+	height:270px;
+}
+
+.max-width{
+    top: 270px;
+    position:fixed;
+    max-width:320px;
+	min-width:320px;
+    width: 100%;
+    height: calc(100% - (270px + 70px));
+    left: calc(50% - 160px);
+    overflow: hidden;
+}
+
+
+
+
+footer{
+    position:fixed;
+    bottom: 10px;
+    border:solid 1px #99999933;
+    border-radius: 5px;
+    max-width: 320px;
+    min-width: 320px;
+    width: 100%;
+    height: 40px;
+    left: calc(50% - 160px);
+    padding: 10px;
+}
+
+footer label{
+    position: absolute;
+    height: 12px;
+    line-height: 12px;
+    margin-top: -16px;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 0 5px;
+}
+
+footer .send{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #06d755;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+footer input[type=tel]{
+    position: absolute;
+    width: calc(100% - 50px);
+    height: 30px;
+    top: 7px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    border:none;
+    padding: 0;
+    font-weight: 300;
+    outline: none;
+	background:none;
+	color:#FFF;
+}
+
+footer input::placeholder{
+    color: #99999966;
+}
+
+.alert{
+    position:fixed;
+    z-index: 10;
+    bottom: -110px;
+    background-color: #0f7666;
+    border:solid 1px #33333333;
+    border-radius: 5px 5px 0 0;
+    max-width: 400px;
+    min-width: 330px;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    left: calc(50% - 200px);
+    padding: 10px;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.alert.active{
+    bottom: 0;
+}
+
+@media only screen and (max-width:420px){
+    .max-width, footer, .alert{
+
+    }
+}
+
+#logoTop{
+    position: relative;
+    width: 120px;
+    height: 120px;
+    z-index: 2;
+    margin-left: calc(50% - 60px);
+}
+
+
+h2.titulo{
+	text-align:left;
+	width:100%;
+	position:relative;
+	height:24px;
+	line-height:30px;
+	margin:0;
+	padding:0;
+	font-size:18px;
+	font-weight:400;
+}
+
+
+.icons{
+	overflow:hidden;
+	width:100%;
+	margin:0 auto;
+}
+
+.icons > a{
+	display:block;
+	width:25%;
+	padding:5px 5px;
+	float:left;
+	color:#000;
+    text-decoration: none;    
+}
+
+.icons > a img{
+	width:100%;
+}
+
+.icons > a > div{
+	width:100%;
+	text-align:center;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.lojas{
+    overflow:auto;
+    height: calc(100% - 120px);
+}
+
+.lojas .loja{
+    overflow: hidden;
+    margin: 15px 0 35px 0;
+    border-bottom: 1px dotted #00000066;
+    padding:0px;
+}
+
+.lojas .loja > div{
+    float: left;
+}
+
+.lojas .loja > div:last-of-type{
+    width: 60px;
+    padding: 5px;
+}
+
+.lojas .loja > div:last-of-type a > img{
+    width: 100%;
+    margin-top: 42px;
+}
+
+.lojas .loja > div:first-of-type{
+
+    width: calc(100% - 60px);
+    margin-top: 5px;
+}
+
+.lojas .loja > div h3{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+	font-size:16px;
+	font-weight:400;	
+    font-family: 'Montserrat', sans-serif;	
+}
+
+.lojas .loja > div .mun{
+    font-family: 'Montserrat', sans-serif;	
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.lojas .loja > div .end{
+    font-family: 'Montserrat', sans-serif;	
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;  
+}
+
+.lojas .loja > div .tel{
+    font-family: 'Montserrat', sans-serif;	
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 18px;
+}
